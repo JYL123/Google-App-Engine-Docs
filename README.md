@@ -26,3 +26,7 @@ env_variables:
 5. Read the sample code to get you started:
    https://github.com/GoogleCloudPlatform/nodejs-docs-samples/tree/master/appengine
 6. You are good to go!
+7. Last step before you go:
+```
+gcloud app deploy
+```
