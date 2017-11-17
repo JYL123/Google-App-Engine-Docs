@@ -25,8 +25,8 @@ env_variables:
 # [END app_yaml]
 ````
 5. Read the sample code to get you started:
-   * [Sample code on github] (https://github.com/GoogleCloudPlatform/nodejs-docs-samples/tree/master/appengine)
-   * [Sample code explaination] (https://cloud.google.com/appengine/docs/flexible/nodejs/writing-and-responding-to-pub-sub-messages#prerequisites)
+   * [Sample code on github](https://github.com/GoogleCloudPlatform/nodejs-docs-samples/tree/master/appengine)
+   * [Sample code explaination](https://cloud.google.com/appengine/docs/flexible/nodejs/writing-and-responding-to-pub-sub-messages#prerequisites)
 6. You are good to go!
 7. Last step before you go:
 ```
