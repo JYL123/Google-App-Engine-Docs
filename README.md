@@ -9,7 +9,7 @@ Push `message` to `topic`(an end point), `topic` picks up the message (or you ca
 2. Create a `new subscription` for the topic you just created
     * [how `topic` and `subscription` interact with each other](https://cloud.google.com/functions/docs/tutorials/pubsub)
 3. Navigate to your `src` folder and find your project
-4. Create a `app.yaml` file, and specify your environment 
+4. Create a `app.yaml` file, and specify your environment variables
 ````
 # [START app_yaml]
 runtime: nodejs
