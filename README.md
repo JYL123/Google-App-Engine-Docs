@@ -5,6 +5,8 @@
 ### Logic 
 
 Push `message` to `topic`(an end point), `topic` picks up the message (or you can write functions to process the language, etc), send the processed message to `subscription`(an end point).
+   * [Tutorial 1](https://www.youtube.com/watch?v=sATG0OfdP4g&t=1s)
+   * [Tutorial 2](https://www.youtube.com/watch?v=g0dN8Hkh5H8)
 
 ### Sequences 
 1. Navagate to `pub/sub` page, and create a `topic` 
@@ -36,7 +38,8 @@ gcloud app deploy
 ```
 ### Send your message to Pub/Sub service via endpoint
 1. After you deploy your app on gcloud, you are supposed to receive your app endoint. 
-2. Push message locally to your topic with command: `http POST "https://[Your-Project-ID].appspot.com/pubsub/push?token=[Your-Verification-Token]" < sample_message.json` (sample_message.json is the message you want to push which should be on your current directory)
+2. Push message locally to your topic with command: `http POST "https://[Your-Project-ID].appspot.com/pubsub/push?token=[Your-Verification-Token]" < sample_message.json` (sample_message.json is the message you want to push which should be on your current directory).
+   * [Download httpie](https://github.com/jakubroztocil/httpie#macos)
 3. The reply from your command line/terminal should look like this:
 ```
 HTTP/1.1 200 OK
