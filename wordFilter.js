@@ -1,3 +1,7 @@
+/*
+ * This is the algorithm that can do natrual language processing on sentences to pick up the seniments of it,
+ * and can retrive the subjects of the sentences and its the comments of the subjects in input sentences.
+ */
 var Filter = require('bad-words');
 var natural = require('natural');
 const NLP = require('google-nlp');
