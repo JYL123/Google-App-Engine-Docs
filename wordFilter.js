@@ -45,10 +45,6 @@ var fromBot = { "speech":"food is not nice"}
 var convertToJson = JSON.stringify(fromBot); //simulate a json string from the front end
 var parsedJsonString = JSON.parse(convertToJson);
 var getUserInput = parsedJsonString.speech;
-//console.log("User input string is " + getUserInput);
-//var tokenizer = new natural.WordTokenizer();
-//console.log(tokenizer.tokenize(getUserInput));
-
 
 //Tokenize a sentence to get its components 
 function tokenizer(app){
@@ -97,9 +93,7 @@ const apiKey = 'Your API Key on Google APP Engine for NLP';
 let text = 'The food here is not so good because the chicken is too dry but the food decoration is very nice';
 let nlp = new NLP( apiKey )
 
-/**
- *  Analyze entities from the text string
- */
+ // Analyze entities from the text string
  //first sentiment analysis
  //seocnd entity analysis to get the subject
  //third use filter and speak sentiment analysis to get the descriptive words
@@ -128,9 +122,8 @@ nlp.analyzeEntities( text )
         let cleanKeywords = filterKeywords.clean(substring)
         console.log((i + 1 ) + ": " + substring);
         console.log();
-        /**
-         *  Analyze sentiment from the text string
-         */
+        
+         // Analyze sentiment from the text string
         var obj = "";
         var sentimentScore;
         var negatExpression = "not ";
